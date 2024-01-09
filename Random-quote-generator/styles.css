@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top left, #8886da 0%, #5da7dc 100%);
+}
+
+.quotes-box {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* width: fit-content; */
+  width: 30%;
+  /* height: 33%; */
+  margin: auto;
+  margin-top: 10%;
+  /* border: 1px solid black; */
+  word-wrap: break-word;
+  padding: 2% 4%;
+
+  background: rgba(195, 226, 255, 0.9);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.quotes-h2 {
+  font-family: 'Montserrat', sans-serif, 'Open Sans';
+}
+
+.quotes-field {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  line-height: 150%;
+  height: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.quotes-hr {
+  margin-bottom: 9%;
+  height: 5px;
+  border: none;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.351);
+}
+
+.quotes-btn {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: medium;
+
+  border: 3px solid rgba(103, 181, 253, 0.774);
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
+
+  background: rgb(255, 255, 255);
+  box-shadow: -6px 6px 5px rgba(0, 0, 0, 0.3);
+}
+.quotes-btn:hover {
+  color: rgba(61, 147, 217, 0.903);
+  border: 3px solid rgba(103, 180, 253, 0.955);
+
+  transition: 0.2s;
+}
+.quotes-btn:active {
+  color: rgba(163, 198, 227, 0.903);
+  border: 3px solid rgba(156, 206, 252, 0.955);
+  box-shadow: -6px 6px 5px rgba(0, 0, 0, 0.5);
+
+  transition: 0.2s;
+}
+
+@media (max-width: 1400px) {
+  .quotes-field {
+    height: 130px;
+  }
+  @media (max-width: 1256px) {
+    .quotes-box {
+      height: 340px;
+      width: 400px;
+    }
+  }
+  @media (max-width: 950px) {
+    .quotes-box {
+      padding: 3% 5%;
+    }
+  }
+  @media (max-width: 610px) {
+    .quotes-box {
+      height: 340px;
+      width: 340px;
+      padding: 4% 5% 1% 5%;
+    }
+      @media (max-width: 500px) {
+        .quotes-box {
+          padding: 4% 7% 1% 7%;
+          height: 310px;
+        }
+      }
+      @media (max-width: 490px) {
+        .quotes-h2 {
+          font-size: 22px;
+        }
+        .quotes-p {
+          font-size: 14px;
+        }
+        .quotes-btn {
+          padding: 2% 10% 2%;
+          font-size: 14px;
+        }
+      }
+
+      /* MIN WIDTH */
+      @media (min-width: 1400px) {
+        .quotes-hr {
+          margin-top: 14%;
+        }
+        @media (min-width: 1600px) {
+          .quotes-hr {
+            margin-top: 13%;
+          }
+        }
+        @media (min-width: 1700px) {
+          .quotes-hr {
+            margin-top: 10%;
+          }
+        }
+        @media (min-width: 1800px) {
+          .quotes-hr {
+            margin-top: 7%;
+          }
+        }
+      }
+    }
+  }
+}
